@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <list>
+      <item>
+          <id>0</id>
+          <typeId>0</typeId>
+          <name>公告</name>
+          <pic>images/message.png</pic>
+      </item>
+      <item>
+          <id>1</id>
+          <typeId>0</typeId>
+          <name>考勤</name>
+          <pic>images/daily_work.png</pic>
+      </item>
+      <item>
+          <id>2</id>
+          <typeId>0</typeId>
+          <name>计划与总结</name>
+          <pic>images/plan_summary.png</pic>
+      </item>
+      <item>
+          <id>3</id>
+          <typeId>0</typeId>
+          <name>投诉建议</name>
+          <pic>images/suggest.png</pic>
+      </item>
+      <item>
+          <id>4</id>
+          <typeId>0</typeId>
+          <name>请假</name>
+          <pic>images/ask_leave.png</pic>
+      </item>
+      <item>
+          <id>5</id>
+          <typeId>0</typeId>
+          <name>通讯录</name>
+          <pic>images/contacts.png</pic>
+      </item>
+      <item>
+          <id>6</id>
+          <typeId>0</typeId>
+          <name>数据上报</name>
+          <pic>images/upload.png</pic>
+      </item>
+  </list>
+    
+</data>

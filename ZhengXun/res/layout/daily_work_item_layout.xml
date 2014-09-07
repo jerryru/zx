@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout android:id="@+id/rl_sigin_item_layout"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dp">
+        <TextView android:id="@+id/tv_date"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:text="老百姓大药房"/>
+         <TextView android:id="@+id/tv_is_syn"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:text="签到"/>
+           <TextView android:id="@+id/tv_time"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@id/tv_date"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:text="2014-02-09 18:00"/>
+           
+          <TextView android:id="@+id/tv_time_period"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_date"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:text="20分钟"/>
+    </RelativeLayout>"
+
+</LinearLayout>

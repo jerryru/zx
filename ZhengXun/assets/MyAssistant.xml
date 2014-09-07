@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <list>
+      <item>
+          <id>0</id>
+          <typeId>1</typeId>
+          <name>巡店</name>
+          <pic>images/tour.png</pic>
+      </item>
+      <item>
+          <id>1</id>
+          <typeId>1</typeId>
+          <name>家访</name>
+          <pic>images/home_visit.png</pic>
+      </item>
+      <item>
+          <id>2</id>
+          <typeId>1</typeId>
+          <name>竞品信息</name>
+          <pic>images/com_info.png</pic>
+      </item>
+      <item>
+          <id>3</id>
+          <typeId>1</typeId>
+          <name>市场活动</name>
+          <pic>images/market_act.png</pic>
+      </item>
+      <item>
+          <id>4</id>
+          <typeId>1</typeId>
+          <name>窜货稽查</name>
+          <pic>images/conflits_check.png</pic>
+      </item>
+      <item>
+          <id>5</id>
+          <typeId>1</typeId>
+          <name>产品知识</name>
+          <pic>images/product_info.png</pic>
+      </item>
+      <item>
+          <id>6</id>
+          <typeId>1</typeId>
+          <name>电话会议</name>
+          <pic>images/tel_con.png</pic>
+      </item>
+  </list>
+    
+</data>

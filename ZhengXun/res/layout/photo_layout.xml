@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="fill_parent"  
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom" 
+    android:gravity="center_vertical">  
+  
+  
+
+     <include layout="@layout/photo_footer_layout"
+          android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_alignParentBottom="true"
+         android:id="@+id/photo_layout"/>
+     
+         <ImageView   
+        android:id="@+id/img_photo"          
+        android:layout_width="fill_parent"  
+        android:layout_height="match_parent"
+        android:layout_above="@id/photo_layout"/>  
+  
+</RelativeLayout>  

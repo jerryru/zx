@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cn.android.zhengxun.app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+     <uses-sdk
+        android:minSdkVersion="8"/> 
+      <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 使用网络功能所需权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>    
+    <!-- 这个权限用于获取wifi的获取权限,wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+     
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <!-- 获取设置信息和详情页直接拨打电话需要以下权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" >
+    </uses-permission>
+    <!-- 使用定位功能所需权限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+
+    <permission android:name="android.permission.BAIDU_LOCATION_SERVICE" >
+    </permission>
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/zx"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" android:name="com.cn.android.zhengxun.app.MyApplication">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YbiDb61pl4AW1c7yGkIqdYr2" />
+
+        <activity
+            android:name="com.cn.android.zhengxun.app.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".activity.LoginActivity" >
+             
+        </activity>
+        <activity android:name=".activity.DailyWorkSheetActivity" >
+        </activity>
+        <activity android:name=".activity.DailyMessageActivity" >
+        </activity>
+        <activity android:name=".activity.TourActivity" >
+        </activity>
+        <activity android:name=".activity.HomeVisitActivity" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <activity android:name=".activity.MapActivity" >
+        </activity>
+        <activity android:name=".activity.DailyMessageDetailActivity"></activity>
+        <activity android:name=".activity.PhotoActivity">           
+        </activity>
+        <activity android:name=".activity.FirstScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AbnormalRemarkActivity"></activity>
+        <activity android:name=".activity.SummaryActivity"></activity>
+        <activity android:name=".activity.DailyWorkListActivity"></activity>
+        <activity android:name=".activity.TourListActivity"></activity>
+        <activity android:name=".activity.HomeVisitListActivity"></activity>
+        <activity android:name=".activity.detail.TourDetailActivity"></activity>
+        <activity android:name="com.cn.android.zhengxun.app.activity.detail.FamilyDetailActivity"></activity>
+    </application>
+
+</manifest>

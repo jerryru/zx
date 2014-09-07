@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/date_picker_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:gravity="center_horizontal"
+    android:background="@drawable/label_bg"
+    android:padding="5dp">
+    
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+         android:padding="5dp"
+        android:text="@string/from"/>
+    <TextView 
+        android:id="@+id/tv_from_date"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@color/gray"
+        android:padding="5dp"
+        android:text="2014-05-01"/>
+   
+    <TextView 
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+         android:padding="5dp"
+        android:text="@string/to"/>
+     <TextView 
+         android:id="@+id/tv_to_date"
+         android:background="@color/gray"
+         android:layout_height="wrap_content"
+          android:padding="5dp"
+        android:layout_width="wrap_content"
+         android:text="2014-05-20"/>
+     <Button android:id="@+id/btn_select_data"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_margin="5dp"
+         android:text="@string/select"/>
+
+</LinearLayout>

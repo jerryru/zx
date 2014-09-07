@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:padding="5dip"
+    android:layout_gravity="bottom"
+    android:background="@drawable/title_bg">
+    
+<Button android:id="@+id/btn_phot_ok"
+   android:layout_marginRight="10dip" 
+   android:layout_height="wrap_content"
+   android:layout_width="wrap_content"  
+   android:text="@string/ok"/>
+<Button  android:id="@+id/btn_photo_cancel"   
+    android:layout_toRightOf="@id/btn_phot_ok" 
+    android:layout_marginLeft="10dip" 
+    android:layout_height="wrap_content"
+   android:layout_width="wrap_content"
+   android:text="@string/cancel"/>
+</RelativeLayout>

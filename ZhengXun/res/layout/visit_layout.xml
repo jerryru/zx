@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- Header -->
+
+        <include layout="@layout/header_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <!-- 门店 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/txt_select_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/select_shop" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_pop_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/txt_select_shop"
+                    android:background="@drawable/login_inputbox"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_search_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/zhengxun"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_down_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/search_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <!-- 店员 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/txt_visit_select_clerk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/select_clerk" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_visit_pop_resource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/txt_visit_select_clerk"
+                    android:background="@drawable/login_inputbox"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_visit_selected_clerk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/zhengxun"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_visit_down_arrow_clerk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/search_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- 当前位置 -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dip" >
+
+                <TextView
+                    android:id="@+id/txt_current_lcaotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/current_location" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_current_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/txt_current_lcaotion"
+                    android:background="@drawable/login_inputbox" >
+
+                    <TextView
+                        android:id="@+id/tv_current_lcaotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/unknown"
+                        android:paddingRight="30dp"
+                        android:textSize="14sp" />
+                     <ImageView
+                        android:id="@+id/img_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dip"
+                        android:src="@drawable/selector_refresh" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_visit_door_photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_visit_gate_hpoto_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/visit_gate_photo"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/txt_visit_gate_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_visit_gate_hpoto_ico"
+                android:padding="8dip"
+                android:text="@string/visit_gate_photo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/visit_gate_photo"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_visit_gift_photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_visit_gift_hpoto_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/visit_display_photo"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/txt_visit_gift_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_visit_gift_hpoto_ico"
+                android:padding="8dip"
+                android:text="@string/visit_display_photo" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/visit_display_photo"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_visit_summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_visit_summary_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/visit_summary"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/txt_visit_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_visit_summary_ico"
+                android:padding="8dip"
+                android:text="@string/visit_summary" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/visit_summary"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="0" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit_visit_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/selector_confirm_btn"
+            android:text="@string/visit_finish"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/rcChat_popup"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:visibility="visible" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                layout="@layout/voice_rcd_hint_window"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_company_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+         android:background="@color/white"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_search_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <EditText
+                android:id="@+id/et_search_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login_inputbox"
+                android:hint="@string/search_hint"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/et_search_area"
+                android:src="@drawable/selector_select" />
+        </RelativeLayout>
+
+           <TextView
+            android:id="@+id/tv_search_no_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_results"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:visibility="gone" />
+           
+        <ListView
+            android:id="@+id/lst_company_visit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"           
+           android:divider="@drawable/splitor"
+        android:layout_margin="5dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

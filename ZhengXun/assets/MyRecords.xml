@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <list>
+      <item>
+          <id>0</id>
+          <typeId>2</typeId>
+          <name>我的客户</name>
+          <pic>images/my_client.png</pic>
+      </item>
+      <item>
+          <id>1</id>
+          <typeId>2</typeId>
+          <name>我的任务</name>
+          <pic>images/my_task.png</pic>
+      </item>
+      <item>
+          <id>2</id>
+          <typeId>2</typeId>
+          <name>我的工作</name>
+          <pic>images/my_work.png</pic>
+      </item>
+ 
+  </list>
+    
+</data>

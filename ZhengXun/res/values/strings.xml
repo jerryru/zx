@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">正讯移动销售助理</string>
+    
+  <string name="zhengxun">正讯</string>
+    <string name="menu_settings">设置</string>
+    <string name="daily_work">日常工作</string>
+    <string name="sell_assistant">销售助理</string>
+    <string name="personal_center">我的业绩</string>
+    <string name="more">扩展功能</string>
+    <string name="hint">提示</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="exit">退出</string>
+    <string name="select">查询</string>
+    <string name="refresh">刷新</string>
+    <string name="submit">提交</string>
+    <string name="confirm">您确认退出应用程序?</string>
+    <string name="loading">加载中……</string>
+    <string name="none">无</string>
+    <string name="select_shop_hint">请选择门店！</string>
+    <string name="submit_failed">提交失败！</string>
+    <string name="submited">提交成功！</string>
+    <string name="initlizing">正在初始化，请耐心等待！</string>
+    <string name="save">保存</string>
+    <string name="saved">保存成功！</string>
+    <string name="unknown">未知</string>
+    <!-- login -->
+    <string name="login_userName">用户名登录</string>
+    <string name="user_name">用户名：</string>
+    <string name="hint_username">输入用户名</string>
+    <string name="password">密\u0020\u0020\u0020\u0020码：</string>
+    <string name="hint_password">输入你的密码</string>
+    <string name="remember_username">记住账号</string>
+    <string name="remember_password">记住密码</string>
+    <string name="login">登录</string>
+    <string name="wrong_psw">密码错误！</string>
+    <string name="io_exception">无法访问服务器！</string>
+    
+    <string name="worksheet">考勤</string>
+    <string name="worksheet_select">考勤记录</string>
+    <string name="announcement">通知公告</string>
+    <string name="worksheet_area">考勤时段：</string>
+    <string name="signin">签到</string>
+    <string name="signout">签退</string>
+    <string name="signined">签到成功！</string>
+    <string name="signouted">签退成功！</string>
+    <string name="signined_failed">签到失败！</string>
+    <string name="signouted_failed">签退失败！</string>
+    
+    <string name="back">返回</string>
+    <string name="tour">巡店</string>
+    <string name="tour_detail">巡店详情</string>
+    <string name="tour_select">巡店记录</string>
+    <string name="select_shop">选择门店：</string>
+    <string name="select_clerk">选择店员：</string>
+    <string name="tour_gate_photo">1.门头拍照</string>
+    <string name="tour_display_photo">2.陈列拍照</string>
+    <string name="tour_sell_form">3.填报销量</string>
+    <string name="tour_stock_form">4.填报库存</string>
+    <string name="tour_summary">5.巡店小结</string>
+    <string name="current_location">当前位置：</string>
+    <string name="text_summary">文字小结：</string>
+    <string name="audio_summary">语音小结：</string>
+    <string name="door_photo_hint">请先拍门头照！</string>
+    <string name="display_photo_hint">请先拍陈设照！</string>
+    <string name="display_photo">陈设照：</string>
+    <string name="summary_remark">文字小结：</string>
+    <string name="daily_work_period">8:30-5:30</string>
+    <string name="tour_finish">巡店结束</string>
+    <string name="visit_finish">家访结束</string>
+    <string name="process_unfinished">抱歉！业务流程没完成，无法结束！</string>
+    <!-- visit -->
+    <string name="visit">家访</string>
+    <string name="visit_history">家访记录</string>
+    <string name="visit_gate_photo">1.门头拍照</string>
+    <string name="visit_display_photo">2.礼物拍照</string>
+     <string name="visit_summary">3.家访小结</string>
+     <string name="with_no_company">没有选择门店，请选择门店！</string>
+     <string name="without_gift_photo">请先进行礼品拍照！</string>
+    <string name=" with_no_clerk">请先选择店员！</string>
+    <string name="visit_detail">家访详情</string>
+    <string name="gift_photo">礼品照：</string>
+
+     <string name="abnormal_remark_label">请输入或拍照录音进行定位异常说明 </string>
+     <string name="developing">体验版本不包含企业版功能，谢谢关注！</string>
+     <string name="inputing">请输入文本说明(200字以内)</string>
+     <string name="abnormal_submit">异常报备</string>
+     <string name="abnormal_postioning_record">定位异常报备</string>
+     <string name="gps_not_open">位置服务没有打开，请打开位置服务和网络！</string>
+     
+     <string name="timer_pre_label">还剩</string>
+     <string name="timer_apd_label">秒</string>
+     
+     <string name="delete_photo">删除照片</string>
+     <string name="delete_audio">删除录音</string>
+     
+     <string name="look">查看</string>
+     <string name="gate_photo">门头照：</string>
+     <string name="from">从</string>
+     <string name="to">到</string>
+     <string name="abnormal_positioning">定位异常</string>
+     <string name="normal_positioning">定位正常</string>
+     
+     <string name="begin_submit">开始上报！</string>
+     <string name="finish_submit">上报结束！</string>
+     <string name="no_network">抱歉，无网络连接，无法上传数据！</string>
+     <string name="not_need_to_submit">您没有要上报的数据！</string>
+     <string name="confirm_submit">您确定上传数据？</string>
+     <string name="not_support_due_to_test">抱歉！手机端体验版本，不能上传数据！</string>
+     
+     <string name="search_hint">请输入名字</string>
+     <string name="exception">异常位置</string>
+     <string name="get_loc_without_address">未连接网络，无法解析获取地址</string>
+     <string name="without_gps_info">没有GPS信息</string>
+     
+     <string name="no_results">没有相关的药店！</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+ <RelativeLayout android:id="@+id/map_header_layout"
+        android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/title_bg"
+    android:paddingBottom="5dp"
+    android:layout_gravity="center_horizontal">
+     <Button android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_back_bg"/>
+    <TextView android:id="@+id/txt_title"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:text="@string/zhengxun"/>
+   <Button android:id="@+id/btn_submit"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="5dip"
+    android:layout_marginRight="5dip"
+    android:text="@string/submit"
+    android:textColor="@color/white"
+    android:background="@drawable/selector_btn_right_bg"/> 
+ <!--   <ImageView android:id="@+id/btn_submit"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentRight="true"
+    android:layout_marginTop="5dip"
+    android:layout_marginRight="5dip"
+    android:src="@drawable/selector_submit"
+    android:contentDescription="@string/submit"/> -->
+ 
+<!-- <Button android:id="@+id/btn_refefsh"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_toLeftOf="@id/btn_submit"
+    android:layout_margin="5dip"
+    android:text="@string/refresh"/> -->
+
+<!-- <ImageView 
+    android:id="@+id/btn_refefsh"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_toLeftOf="@id/btn_submit"
+    android:layout_margin="5dip"
+    android:src="@drawable/selector_refresh"
+    android:contentDescription="@string/refresh"/> -->
+
+   <!-- <TextView android:id="@+id/txt_current_location"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@drawable/login_inputbox"
+         android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginBottom="6dp"
+        android:maxLines="1" 
+        android:textSize="14sp" 
+        android:gravity="center_vertical"     
+        android:layout_toLeftOf="@id/btn_refefsh"/> -->
+   </RelativeLayout>
+    <include layout="@layout/map_header_layout"
+        android:layout_below="@+d/map_header_layout"/>
+</LinearLayout>

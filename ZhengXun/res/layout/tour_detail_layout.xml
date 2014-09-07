@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical" >
+
+        <include layout="@layout/header_layout" />
+
+        <TextView
+            android:id="@+id/tv_gate_photo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/gate_photo"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_gate_photo_item_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_gate_photo"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/zx" />
+
+            <Button
+                android:id="@+id/btn_look_gate_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/look" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_display_photo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/display_photo"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_display_photo_item_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_display_photo"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/zx" />
+
+            <Button
+                android:id="@+id/btn_look_display_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/look" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_summary_audio_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/audio_summary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_summary_audio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatto_bg"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_summary_remark_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/summary_remark"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_summary_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=""
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_abnormal_photo_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/gate_photo"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rl_abnormal_photo_item_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_abnormal_photo"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/zx" />
+
+            <Button
+                android:id="@+id/btn_look_abnormal_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/look" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_summary_remark_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/gate_photo"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_summary_remark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/gate_photo"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>
+   <ImageView android:id="@+id/img_big_pic"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:contentDescription="@string/abnormal_remark_label"/>
+
+</RelativeLayout>

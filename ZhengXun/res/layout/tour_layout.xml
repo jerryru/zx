@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/header_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_select_shop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/select_shop" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_pop_source"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/txt_select_shop"
+                    android:background="@drawable/login_inputbox"
+                    android:paddingLeft="5dp" >
+
+                    <TextView
+                        android:id="@+id/tv_search_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/zhengxun"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_down_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dip"
+                        android:src="@drawable/search_down_arrow" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/txt_current_lcaotion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/current_location" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_pop_resource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    android:layout_toRightOf="@id/txt_current_lcaotion"
+                    android:background="@drawable/login_inputbox" >
+
+                    <TextView
+                        android:id="@+id/tv_current_lcaotion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/unknown"
+                        android:paddingRight="30dp"
+                        android:textSize="14sp" />
+
+                  <ImageView
+                        android:id="@+id/img_refresh"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="5dip"
+                        android:src="@drawable/selector_refresh" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- door photo -->
+
+        <RelativeLayout
+            android:id="@+id/rl_tour_door_photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_gate_hpoto_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_gate_photo"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/tv_gate_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_gate_hpoto_ico"
+                android:paddingLeft="8dp"
+                android:text="@string/tour_gate_photo"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_gate_photo"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="0" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tour_display_photo_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_display_hpoto_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_display_photo"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/tv_display_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_display_hpoto_ico"
+                android:paddingLeft="8dip"
+                android:text="@string/tour_display_photo"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_display_photo"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tour_sell_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_sell_form_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_sell_form"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/tv_sell_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_sell_form_ico"
+                android:paddingLeft="8dip"
+                android:text="@string/tour_sell_form"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_sell_form"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tour_stock_form_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_stock_form_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_stock_form"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/tv_stock_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_stock_form_ico"
+                android:paddingLeft="8dip"
+                android:text="@string/tour_stock_form"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_stock_form"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_tour_summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/img_summary_ico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_summary"
+                android:src="@drawable/visit_list_ico" />
+
+            <TextView
+                android:id="@+id/tv_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/img_summary_ico"
+                android:paddingLeft="8dip"
+                android:text="@string/tour_summary"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/tour_summary"
+                android:padding="8dp"
+                android:src="@drawable/selector_arrow"
+                android:tag="4" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit_tour"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/selector_confirm_btn"
+            android:text="@string/tour_finish"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_company_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/rl_search_area"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/label_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <EditText
+                android:id="@+id/et_search_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/login_inputbox"
+                android:hint="@string/search_hint"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:text=""
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@id/et_search_area"
+                android:src="@drawable/selector_select" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_search_no_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_results"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="5dp"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lst_company_tour"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="5dp"
+            android:divider="@drawable/splitor" />
+    </LinearLayout>
+
+</RelativeLayout>
